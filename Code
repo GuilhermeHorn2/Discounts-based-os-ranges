@@ -1,0 +1,13 @@
+a = float(input('Kilograms of A:'))
+b = float(input('Kilograms of B:'))
+
+if  a + b < 5:
+    v = a*2.5 + b*1.8
+    if v > 25:
+        v *= 0.9
+elif  a + b > 5:
+    v = (5*2.5 + b*1.9) + 2.2*(a - 5) + 1.5*(b - 5)
+    if v > 25 or a+b >8:
+        v *= 0.9
+print(round(v,2))
+
